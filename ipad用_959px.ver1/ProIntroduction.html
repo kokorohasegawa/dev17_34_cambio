@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p class="pro_text">
+        Combio(カンビオ)で<br>
+        あなたに最適な理想の上司が見つかります
+        </p>
+
+        <img src="image/pro1.png" class="pro_img">
+    </div>
+</body>
+</html>
+<style scoped>
+/* デフォルトのCSS */
+    html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+/* ここまでがデフォルトCSS */
+/* ここからがポイントイントロCSS */
+.container{
+height: 100%;
+width: 100%;
+max-width: 1440px;
+margin: 0 auto;
+}
+
+.pro_text{
+width: 500px;
+color: #273240;
+font-size: 40px;
+transition: all .5s;
+line-height: 70px;
+font-weight: bold;
+border-bottom:3px solid #DB0B40;
+margin-left: 80px;
+}
+
+.pro_img{
+width: 1450px;
+position: relative;
+top:100px;
+left: 50px;
+margin-bottom: 200px;
+}
+/* ここまでがポイントイントロCSS */
+/* ここがレスポンシブ（ipad）対応 */
+@media screen and (max-width: 959px) {
+  .container{
+max-width: 959px;
+}
+
+.pro_text{
+width: 333px;
+color: #273240;
+line-height: 47px;
+font-size: 27px;
+margin-left: 53px;
+}
+
+.pro_img{
+width: 959px;
+position: relative;
+top:67px;
+left: 33px;
+margin-bottom: 133px;
+}
+
+} /*ウィンドウ幅が最大959pxまでの場合に適用*/
+/* ここまで */
+
+</style>
